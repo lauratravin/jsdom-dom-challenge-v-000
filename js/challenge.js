@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //*main fn
 function createCounter() {
- 
- counterWorking = setInterval( function(){   
+
+ counterWorking = setInterval( function(){
                             counter++;
-                            displayCounter();                                                     
+                            displayCounter();
                         },1000);
 counterIsWorking = 1;
-                    
-}; 
+
+};
 
 
 function increaseCounter() {
@@ -29,7 +29,7 @@ function stopCounter() {
      counterIsWorking = 0;
      pauseCounter.innerText = "resume"
     } else {
-        createCounter(); 
+        createCounter();
         displayCounter();
         counterIsWorking = 1;
         pauseCounter.innerText = "pause"
@@ -47,7 +47,7 @@ function leaveComment(event) {
     console.log(" create commentario ");
     let text = document.createElement('p');
     text.textContent =  form.querySelector('input').value;
-    heartList.appendChild(text); 
+    heartList.appendChild(text);
     event.preventDefault();
 };
 
